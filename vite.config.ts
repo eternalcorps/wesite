@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/portfolio/", // Add this line - replace 'portfolio' with your repo name
+  base: "/", // Use '/' if deploying to the root of your domain
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean,
   ),
